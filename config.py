@@ -9,10 +9,10 @@ os.makedirs(INSTANCE_DIR, exist_ok=True)
 
 class Config:
 
-    SECRET_KEY = "boschflow-2026"
+    SECRET_KEY = os.getenv("SECRET_KEY", "dev-secret-key")
 
     SQLALCHEMY_DATABASE_URI = (
-        f"sqlite:///{os.path.join(INSTANCE_DIR, 'boschflow.db')}"
+        f"sqlite:///{os.path.join(INSTANCE_DIR, 'inventra.db')}"
     )
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
