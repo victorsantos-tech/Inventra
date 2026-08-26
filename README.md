@@ -206,15 +206,15 @@ http://127.0.0.1:5000
 
 ### Produtos
 
-![Gestão de produtos](Screenshots/Produtos.png)
+![Gestão de produtos](Screenshots/produtos.png)
 
 ### Entrada de Estoque
 
-![Entrada de estoque](Screenshots/estoque%20de%20entrada.png)
+![Entrada de estoque](Screenshots/entrada-estoque.png)
 
 ### Saída de Estoque
 
-![Saída de estoque](Screenshots/estoque%20de%20saída.png)
+![Saída de estoque](Screenshots/saida-estoque.png)
 
 ---
 
