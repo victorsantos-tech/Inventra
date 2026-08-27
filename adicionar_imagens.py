@@ -3,33 +3,25 @@ from database import db
 from models.produtos import Produto
 
 
-imagens = {
-    "INV001": "sensor_capacitivo.jpg",
-    "INV002": "sensor fotoeletrico industrial.png",
-    "INV006": "plc industrial.jpg",
-    "INV022": "fonte_industrial.jpg"
-}
-
-
 with app.app_context():
-    for codigo, imagem in imagens.items():
-        produto = Produto.query.filter_by(
-            codigo=codigo
-        ).first()
 
-        if produto:
-            produto.imagem = imagem
+    produtos = Produto.query.all()
 
-            print(
-                f"{produto.nome} -> {imagem}"
-            )
+    atualizados = 0
 
-        else:
-            print(
-                f"{codigo} não encontrado"
-            )
+    for produto in produtos:
+
+        produto.imagem = f"{produto.codigo}.jpg"
+        atualizados += 1
+
+        print(
+            f"{produto.codigo} - {produto.nome} -> {produto.imagem}"
+        )
 
     db.session.commit()
 
 
+print("=" * 50)
 print("Imagens atualizadas com sucesso!")
+print(f"{atualizados} produtos atualizados.")
+print("=" * 50)
