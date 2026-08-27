@@ -196,25 +196,17 @@ http://127.0.0.1:5000
 
 ## Screenshots
 
-### Login
-
-![Tela de login](Screenshots/login.png)
-
 ### Dashboard
 
 ![Dashboard](Screenshots/dashboard.png)
 
-### Produtos
+### Gestão de Produtos
 
 ![Gestão de produtos](Screenshots/produtos.png)
 
 ### Entrada de Estoque
 
 ![Entrada de estoque](Screenshots/entrada-estoque.png)
-
-### Saída de Estoque
-
-![Saída de estoque](Screenshots/saida-estoque.png)
 
 ---
 
